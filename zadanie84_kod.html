@@ -1,0 +1,84 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <textarea rows="100" cols="300">
+<html>
+   <head>
+         <meta charset="utf-8">
+         <title>Zadanie 84</title>
+         
+          <script type="text/javascript">
+
+             function dni_iwasieczko(dzien,miesiac,rok) 
+              {
+                 d_liczba=parseFloat(dzien) 
+                 m_liczba=parseFloat(miesiac)
+                 r_liczba=parseFloat(rok)
+
+             var dzis=new Date(); 
+             var urodziny=new Date(r_liczba,m_liczba-1,d_liczba);
+
+             var czyRok; 
+             var czyMiesiac;
+             var czyDzien;
+
+
+             ilosc_wynik=Math.floor((dzis-urodziny)/(86400000));
+
+             document.getElementsByName('ilosc')[0].value=ilosc_wynik;
+
+             alert(`${ilosc_wynik} dni`);
+
+             pokaz1.innerHTML="Ilość dni = "+ilosc_wynik+" dni"+"<br>";
+
+             czyRok = dzis.getFullYear();
+             czyMiesiac = dzis.getMonth() + 1;
+             czyDzien = dzis.getDate();
+
+
+
+             if ((czyRok == r_liczba+18) && (czyDzien == d_liczba) && (czyMiesiac == m_liczba))
+             {
+                pokaz2.innerHTML="Masz dziś 18 urodziny!";
+             }
+             else if ((ilosc_wynik / 360) >= 18)
+             {
+                pokaz2.innerHTML="Masz 18 lat!";
+             }
+             else{
+                pokaz2.innerHTML="Nie masz jeszcze 18 lat!";
+             }
+
+             }
+          </script>
+          
+       </head>
+       
+       <body>
+     
+              <form name="formularz" action="..." onsubmit="dni_iwasieczko(this.dzien.value,this.miesiac.value,this.rok.value);return false">
+                 Podaj dzień = <input size="6" name="dzien">
+                 Podaj miesiąc = <input size="6" name="miesiac">
+                 Podaj rok = <input size="6" name="rok">
+
+                 <br><br>
+
+                 <input TYPE="submit" Value="oblicz" >
+                 <br><br>
+
+                 Ilość dni = <input size="6" name="ilosc">
+              </form>
+      
+          <table>
+             <tr id="pokaz1"></tr>
+             <tr id="pokaz2"></tr>
+          </table>
+      
+   </body>
+   
+</html>
+        </textarea>
+    </body>
+</html>
