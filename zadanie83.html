@@ -1,0 +1,52 @@
+<html>
+   <head>
+     
+      <link rel="stylesheet" href="zadanie83.css">
+      <meta charset="utf-8">
+      <title> Zadanie 83</title>
+      
+      <script language="JavaScript">
+         function pushbutton() {
+         alert("Czesc !");}
+          function students_name() {
+         alert("Kacper");}
+      </script>
+      
+   </head>
+   
+   <body>
+     
+     
+      <div id="uno">
+         Ostatnio zmodyfikowano 
+      </div>
+      
+      <script language="LiveScript">
+         document.write(document.lastModified,"<br>")
+      </script>
+      
+      <form>
+         <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+      </form>
+      
+      <div id="dos">
+         <script language="JavaScript">
+            dzis = new Date()
+            document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+         </script>
+      </div>
+      
+      <div id="tres">
+        
+         <script language="JavaScript">
+            document.write("<br>Aktualna data : ",dzis.getMonth()+1,",",dzis.getDate(),",",dzis.getFullYear());
+         </script>
+         
+      </div>
+      
+      <form>
+         <input type="button" name="name" value="Imię ucznia" onclick="students_name()">
+      </form>
+      
+   </body>
+</html>
