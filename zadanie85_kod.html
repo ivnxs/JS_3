@@ -1,0 +1,53 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <textarea rows="100" cols="300">
+<html>
+    <head>
+        <title>
+            Zadanie 85  
+        </title>
+        
+        <meta charset="utf-8">
+        <script language="JavaScript">
+        
+                 function iwasieczko_start()
+                 {     
+                 start_iwa = new Date();
+                 poczatek_iwa=start_iwa.getTime();
+                 }
+            
+            
+                 function iwasieczko_stop()
+                 {
+                 stop_iwa = new Date();
+                 koniec_iwa=stop_iwa.getTime()
+                 roznica_iwa=koniec_iwa-poczatek_iwa; 
+                 pokaz1.innerHTML=roznica_iwa/1000+" s";
+                 } 
+            
+        </script>
+    </head>
+    
+    <body>
+            <script>
+                    dzis_iwa = new Date();
+                    document.write("<br>Aktualny czas : ",dzis_iwa.getHours(),":",dzis_iwa.getMinutes());
+            </script>
+            
+            <br>
+            <input type="button" name="StartButton" value="START stoper" onclick="iwasieczko_start()">
+            <input type="button" name="StopButton" value="STOP stoper" onclick="iwasieczko_stop()">
+            <br>
+            
+            <table border="2">
+            <tr id="pokaz1"></tr>
+            
+           </table>
+    </body>
+</html>
+        </textarea>
+    </body>
+</html>

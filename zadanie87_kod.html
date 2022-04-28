@@ -1,0 +1,38 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <textarea rows="100" cols="300">
+<html>
+   <head>
+      <title>
+         Zadanie 87  
+      </title>
+      <script language="JavaScript">
+         function przycisk1_iwasieczko(){
+         document.write("Ostatnia data modyfikacji: ",document.lastModified,"<br>");
+         } 
+         function  przycisk2_iwasieczko(){
+         today = new Date();
+         document.write("Aktualna data: ",today.getDate(),".",today.getUTCMonth()+1,".",today.getFullYear());
+         }
+         
+         
+         function przycisk3_iwasieczko(){
+         hour = new Date();
+         document.write("Aktualna godzina: ",hour.getHours(),":",hour.getMinutes());
+         }
+      </script>
+   </head>
+   <body>
+      <form>
+         <a onclick="przycisk1_iwasieczko(' ')"><img src="zad87a.png" alt="Przycisk1" border="0" onmouseover="this.src = 'zad87a.png'" onmouseout="this.src ='zad87a.png" /></a>
+         <a onclick="przycisk2_iwasieczko(' ')"><img src="zad87b.png" alt="Przycisk2" border="0" onmouseover="this.src = 'zad87b.png'" onmouseout="this.src ='zad87b.png" /></a>
+         <a onclick="przycisk3_iwasieczko(' ')"><img src="zad87c.png" alt="Przycisk3" border="0" onmouseover="this.src = 'zad87c.png'" onmouseout="this.src ='zad87c.png" /></a>
+      </form>
+   </body>
+</html>
+        </textarea>
+    </body>
+</html>
