@@ -1,0 +1,55 @@
+<html>
+   <head>
+    <meta charset="utf-8">
+     <title>Zadanie 86</title>
+     
+      <script type="text/javascript">
+          
+        function dzienTyg()
+        {    
+        let now = new Date()
+        let dzien = now.getDay(), dzienxx = '';
+         	
+         	
+        switch (dzien){
+        
+        case 1:
+        dzienxx = 'poniedziałek';
+        break
+        case 2:
+        dzienxx = 'wtorek';
+        break
+        case 3:
+        dzienxx = 'środa';
+        break
+        case 4:
+        dzienxx = 'czwartek';
+        break
+        case 5:
+        dzienxx = 'piątek';
+        break
+        case 6:
+        dzienxx = 'sobota';
+        break
+        case 7:
+        dzienxx = 'niedziela';
+        break		
+         			
+        }
+        document.getElementById("wynik").innerHTML = `${dzienxx}`
+        }
+      </script>
+   </head>
+   
+   
+   <body>
+     
+      <p>Aktualny dzień tygodnia</p>
+      
+      <button onclick="dzienTyg()">CLICK</button>
+       
+      <div id="wynik"></div>
+      
+   </body>
+   
+</html>
